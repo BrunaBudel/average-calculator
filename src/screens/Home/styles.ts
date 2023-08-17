@@ -16,13 +16,9 @@ export const styles = StyleSheet.create({
     color: '#faedcd',
     fontSize: 16,
   },
-  input: {
-    height: 45,
-    backgroundColor: '#606c38',
-    borderRadius: 8,
-    color: '#fefae0',
-    padding: 16,
-    fontSize: 16,
+  form: {
+    gap: 24,
+    marginTop: 42,
   },
   buttonText: {
     color: '#fefae0',
