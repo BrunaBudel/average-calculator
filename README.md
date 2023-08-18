@@ -16,7 +16,7 @@ npm install
 ## Usage
 
 ```sh
-expo start to start the expo server
+expo start 
 ```
 
 ## Author
