@@ -4,6 +4,7 @@ import {
   TouchableOpacity,
   Keyboard,
   TouchableWithoutFeedback,
+  Alert,
 } from 'react-native'
 import { styles } from './styles'
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome'
@@ -35,9 +36,14 @@ export function Home() {
   const onSubmit = (data: ICalcForm) => {
     const grade1Float = parseFloat(data.grade1)
     const grade2Float = parseFloat(data.grade2)
+    const average = (grade1Float + grade2Float) / 2
 
-    setResult((grade1Float + grade2Float) / 2)
-    setShowResult(true)
+    if (isNaN(average)) {
+      Alert.alert('Erro', 'Valores inválidos')
+    } else {
+      setResult(average)
+      setShowResult(true)
+    }
     Keyboard.dismiss()
     reset({
       grade1: '',
