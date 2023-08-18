@@ -19,16 +19,5 @@ npm install
 expo start 
 ```
 
-## Author
 
-👤 **Bruna Kodama Budel**
 
-* Github: [@BrunaBudel](https://github.com/BrunaBudel)
-* LinkedIn: [@BrunaKodama](https://linkedin.com/in/BrunaKodama)
-
-## Show your support
-
-Give a ⭐️ if this project helped you!
-
-***
-_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
