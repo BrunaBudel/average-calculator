@@ -3,63 +3,33 @@ import { StyleSheet } from 'react-native'
 export const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#283618',
-    padding: 24,
+    alignItems: 'center',
+    justifyContent: 'space-around',
+    paddingHorizontal: 24,
+    paddingVertical: 48,
   },
-  pageContent: {
-    gap: 56,
+  titleContainer: {
+    alignItems: 'center',
+    justifyContent: 'center',
   },
   title: {
-    color: '#fefae0',
-    fontSize: 24,
+    color: '#000',
     fontWeight: 'bold',
-    marginTop: 48,
+    fontSize: 28,
   },
   subtitle: {
-    color: '#faedcd',
-    fontSize: 16,
-  },
-  form: {
-    gap: 24,
-    marginTop: 42,
-  },
-  buttonText: {
-    color: '#fefae0',
+    color: '#000',
     fontSize: 18,
-    textTransform: 'uppercase',
-    fontWeight: 'bold',
   },
   button: {
-    backgroundColor: '#bc6c25',
-    borderRadius: 8,
-    padding: 8,
-    alignItems: 'center',
-    justifyContent: 'center',
-    flexDirection: 'row',
-    gap: 8,
+    backgroundColor: '#CDE41E',
+    paddingHorizontal: 48,
+    paddingVertical: 8,
+    borderRadius: 4,
+    borderColor: '#000',
+    borderWidth: 1,
   },
-  icon: {
-    color: '#fefae0',
-  },
-  resultContainer: {
-    backgroundColor: '#ccd5ae',
-    borderRadius: 12,
-    alignItems: 'center',
-    justifyContent: 'center',
-    paddingVertical: 36,
-    gap: 18,
-  },
-  resultTitle: {
-    color: '#606c38',
+  buttonText: {
     fontSize: 18,
-    textTransform: 'uppercase',
-  },
-  resultIsEmpty: {
-    color: '#606c38',
-  },
-  resultContent: {
-    color: '#283618',
-    fontSize: 36,
-    fontWeight: 'bold',
   },
 })
