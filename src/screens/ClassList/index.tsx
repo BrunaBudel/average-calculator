@@ -2,8 +2,8 @@ import React from 'react'
 import { View, Text, FlatList } from 'react-native'
 
 import { styles } from './styles'
-
-import Girls from '../../../public/images/girls.svg'
+import { ClassCard } from '../../components/ClassCard'
+import { turmas } from '../../mocks'
 
 export function ClassList() {
   return (
@@ -14,19 +14,15 @@ export function ClassList() {
           Listando turmas cadastradas no sistema
         </Text>
       </View>
-      <View style={styles.list}>
-        <View style={styles.classContainer}>
-          <View style={styles.classIcon}>
-            <Girls width={75} height={75} />
-          </View>
-          <View>
-            <Text style={styles.className}>Turma 1</Text>
-            <Text style={styles.classDescription}>
-              uma simples descrição sobre a matéria
-            </Text>
-          </View>
-        </View>
-      </View>
+      <FlatList
+        data={turmas}
+        keyExtractor={(item) => item.id.toString()}
+        renderItem={({ item }) => (
+          <ClassCard name={item.nome_turma} description={item.descricao} />
+        )}
+        style={styles.list}
+        showsVerticalScrollIndicator={false}
+      />
     </View>
   )
 }
