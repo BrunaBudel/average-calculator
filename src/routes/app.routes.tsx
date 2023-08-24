@@ -1,15 +1,38 @@
-import { createNativeStackNavigator } from '@react-navigation/native-stack'
-
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
+import { Calculator } from '../screens/Calculator'
 import { ClassList } from '../screens/ClassList'
-import { Home } from '../screens/Home'
+import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome'
+import { faCalculator, faList } from '@fortawesome/free-solid-svg-icons'
 
-const { Navigator, Screen } = createNativeStackNavigator()
+const { Navigator, Screen } = createBottomTabNavigator()
 
 export function AppRoutes() {
   return (
-    <Navigator initialRouteName="home" screenOptions={{ headerShown: false }}>
-      <Screen name="home" component={Home} />
-      <Screen name="classList" component={ClassList} />
+    <Navigator
+      screenOptions={{
+        headerShown: false,
+        tabBarShowLabel: false,
+        tabBarActiveTintColor: '#CDE41E',
+      }}
+    >
+      <Screen
+        name="classList"
+        component={ClassList}
+        options={{
+          tabBarIcon: ({ color }) => (
+            <FontAwesomeIcon icon={faList} size={25} color={color} />
+          ),
+        }}
+      />
+      <Screen
+        name="calculator"
+        component={Calculator}
+        options={{
+          tabBarIcon: ({ color }) => (
+            <FontAwesomeIcon icon={faCalculator} size={25} color={color} />
+          ),
+        }}
+      />
     </Navigator>
   )
 }

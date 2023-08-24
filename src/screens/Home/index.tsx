@@ -9,7 +9,7 @@ export function Home(props: {
   navigation: { navigate: (arg0: string) => void }
 }) {
   function handleClassList() {
-    props.navigation.navigate('classList')
+    props.navigation.navigate('appRoutes', { screen: 'classList' })
   }
   return (
     <View style={styles.container}>

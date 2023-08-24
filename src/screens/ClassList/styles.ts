@@ -4,17 +4,17 @@ export const styles = StyleSheet.create({
   container: {
     backgroundColor: '#fff',
     flex: 1,
-    paddingHorizontal: 24,
     paddingTop: 54,
   },
   list: {
+    backgroundColor: '#E8EEF3',
     width: '100%',
     flex: 1,
-    borderRadius: 32,
     paddingHorizontal: 24,
     paddingVertical: 20,
   },
   header: {
+    paddingHorizontal: 24,
     paddingBottom: 16,
   },
   title: {
