@@ -4,7 +4,6 @@ export const styles = StyleSheet.create({
   label: {
     color: '#000',
     fontSize: 18,
-    fontWeight: 'bold',
     marginBottom: 2,
   },
   input: {
