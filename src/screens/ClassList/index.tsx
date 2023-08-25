@@ -1,19 +1,18 @@
 import React from 'react'
-import { View, Text, FlatList } from 'react-native'
+import { View, FlatList } from 'react-native'
 
 import { styles } from './styles'
 import { ClassCard } from '../../components/ClassCard'
 import { turmas } from '../../mocks'
+import { Header } from '../../components/Header'
 
 export function ClassList() {
   return (
     <View style={styles.container}>
-      <View style={styles.header}>
-        <Text style={styles.title}>Lista de Turmas</Text>
-        <Text style={styles.subtitle}>
-          Listando turmas cadastradas no sistema
-        </Text>
-      </View>
+      <Header
+        title="Lista de turma"
+        subtitle="Lista tumas cadastradas no sistema"
+      />
       <FlatList
         data={turmas}
         keyExtractor={(item) => item.id.toString()}

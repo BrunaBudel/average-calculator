@@ -1,5 +1,5 @@
 import { View, TextInput, Text } from 'react-native'
-import { useForm, Controller, FieldError } from 'react-hook-form'
+import { Controller, FieldError } from 'react-hook-form'
 
 import { styles } from './styles'
 
@@ -28,7 +28,7 @@ export default function Input({
           <TextInput
             style={error ? styles.inputError : styles.input}
             placeholder={placeholder}
-            placeholderTextColor="#ccd5ae"
+            placeholderTextColor="#656F77"
             keyboardType="numeric"
             onBlur={onBlur}
             onChangeText={onChange}

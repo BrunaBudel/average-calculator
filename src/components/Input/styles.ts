@@ -2,26 +2,26 @@ import { StyleSheet } from 'react-native'
 
 export const styles = StyleSheet.create({
   label: {
-    color: '#faedcd',
+    color: '#000',
     fontSize: 18,
     fontWeight: 'bold',
     marginBottom: 2,
   },
   input: {
     height: 48,
-    backgroundColor: '#606c38',
+    backgroundColor: '#fff',
     borderRadius: 8,
-    color: '#fefae0',
+    color: '#656F77',
     padding: 16,
     fontSize: 16,
     borderWidth: 2,
-    borderColor: 'transparent',
+    borderColor: '#656F77',
   },
   inputError: {
     height: 48,
-    backgroundColor: '#606c38',
+    backgroundColor: '#fff',
     borderRadius: 8,
-    color: '#fefae0',
+    color: '#656F77',
     padding: 16,
     fontSize: 16,
     borderWidth: 2,

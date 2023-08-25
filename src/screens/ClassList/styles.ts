@@ -13,17 +13,4 @@ export const styles = StyleSheet.create({
     paddingHorizontal: 24,
     paddingVertical: 20,
   },
-  header: {
-    paddingHorizontal: 24,
-    paddingBottom: 16,
-  },
-  title: {
-    color: '#000',
-    fontWeight: 'bold',
-    fontSize: 20,
-  },
-  subtitle: {
-    color: '#656F77',
-    fontSize: 16,
-  },
 })

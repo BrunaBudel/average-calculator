@@ -1,6 +1,5 @@
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
 
-import { ClassList } from '../screens/ClassList'
 import { Home } from '../screens/Home'
 import { AppRoutes } from './app.routes'
 

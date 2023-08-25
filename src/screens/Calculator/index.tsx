@@ -15,6 +15,7 @@ import { zodResolver } from '@hookform/resolvers/zod'
 import { calculatorSchema } from '../../utils/schemas'
 import { useState } from 'react'
 import { faCircleUp } from '@fortawesome/free-solid-svg-icons'
+import { Header } from '../../components/Header'
 
 export function Calculator() {
   const [result, setResult] = useState(0)
@@ -54,10 +55,10 @@ export function Calculator() {
   return (
     <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
       <View style={styles.container}>
-        <Text style={styles.title}>Calculadora de média</Text>
-        <Text style={styles.subtitle}>
-          Insira as notas para calcular a média
-        </Text>
+        <Header
+          title="Calculadora de média"
+          subtitle="Digite as notas para calcular"
+        />
         <View style={styles.pageContent}>
           <View style={styles.form}>
             <Input
