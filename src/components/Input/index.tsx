@@ -9,6 +9,7 @@ interface InputProps {
   control: any
   name: string
   error: FieldError | undefined
+  keyboard?: 'numeric' | 'default'
 }
 
 export default function Input({
@@ -17,6 +18,7 @@ export default function Input({
   control,
   name,
   error,
+  keyboard = 'numeric',
 }: InputProps) {
   return (
     <View>
@@ -29,7 +31,7 @@ export default function Input({
             style={error ? styles.inputError : styles.input}
             placeholder={placeholder}
             placeholderTextColor="#656F77"
-            keyboardType="numeric"
+            keyboardType={keyboard}
             onBlur={onBlur}
             onChangeText={onChange}
             value={value}
