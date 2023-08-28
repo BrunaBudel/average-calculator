@@ -2,7 +2,11 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 import { Calculator } from '../screens/Calculator'
 import { ClassList } from '../screens/ClassList'
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome'
-import { faCalculator, faList } from '@fortawesome/free-solid-svg-icons'
+import {
+  faCalculator,
+  faFileSignature,
+  faList,
+} from '@fortawesome/free-solid-svg-icons'
 import { Absences } from '../screens/Absences'
 
 const { Navigator, Screen } = createBottomTabNavigator()
@@ -39,7 +43,7 @@ export function AppRoutes() {
         component={Absences}
         options={{
           tabBarIcon: ({ color }) => (
-            <FontAwesomeIcon icon={faCalculator} size={25} color={color} />
+            <FontAwesomeIcon icon={faFileSignature} size={25} color={color} />
           ),
         }}
       />
